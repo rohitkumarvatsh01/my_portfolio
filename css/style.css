@@ -411,15 +411,19 @@
 /*** Portfolio End ***/
 
 
-/*** Blog Start ***/
+/*** Certifications Start ***/
 .blog-content .blog-btn a {
     color: var(--bs-primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
 }
+
 .blog-content .blog-btn a:hover {
     color: var(--bs-dark);
+    text-decoration: underline;
 }
-/*** Blog End ***/
-
+/*** Certifications End ***/
 
 /*** Testimonial Start ***/
 .testimonial-carousel {
@@ -498,6 +502,36 @@
 }
 /*** Testimonial End ***/
 
+/*** back to top Start ***/
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #0056b3;
+    color: #fff;
+    border-radius: 50%; 
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover,
+.back-to-top:focus {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.back-to-top i {
+    font-size: 24px; /* Adjust the icon size */
+}
+/*** back to top end ***/
+
 /*** footer Start ***/
 @media (max-width: 991px) {
     .container-fluid .footer-content {
@@ -505,8 +539,3 @@
     }
 }
 /*** footer End ***/
-
-
-
-
-
